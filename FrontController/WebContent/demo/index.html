@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../dist/needpopup.min.css">
+
+	  <!-- Styles just for demo -->
+	<style>
+		.wrapper {
+			padding: 40px 60px;
+		}
+
+
+		p {
+			font-size: 1.2em;
+			line-height: 1.4;
+			color: #343638;
+			margin: 20px 0;
+		}
+
+		.needpopup {
+		  border-radius: 6px;
+		  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 1);
+		}
+
+		.needpopup p {
+			margin: 0;
+		}
+		.needpopup p + p {
+			margin-top: 10px;
+		}
+	</style>
+
+	<style type="text/css">
+	@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+		#id_login, #pw_login{
+			font-family: 'Nanum Gothic', serif;
+			
+		}
+		
+		#id_pw_span{
+			display:none;
+			color:red;
+		}
+		
+		#id_span{
+			padding-top:5px;
+		}
+	</style>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			var 
+			code = ${code};
+			if(code=='1'){
+				alert("회원가입해라")	
+			}else if(code=='2'){
+				document.getElementById('id_pw_span').style.display="block";
+			}
+		};
+	
+	
+		
+	</script>
+	
+	
+	<script type="text/javascript">
+		$(document).on("click", "#log_butten1", function(){
+			
+			var
+			form=$("#form_logpage"),
+			userid=$("#id_login"),
+			userpw=$("#pw_login"),
+			id=$.trim(userid.val()),
+			pw=$.trim(userpw.val());
+			
+			if(id==""){
+				userid.focus();
+				$("#id_span").empty().append("id를 입력하세요").css("color","red");
+				return false;
+			}else{
+			}
+			if(pw==""){
+				userpw.focus();
+				$("#pw_span").empty().append("pw를 입력하세요").css("color","red");
+				return false;
+			}
+			$("#form_logpage").submit();
+		});
+			
+	
+		
+	</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<a href="#" data-needpopup-show="#custom-popup">Show custom options popup</a>
+
+
+			<div id='custom-popup' class="needpopup" data-needpopup-options="custom">
+				
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="../dist/needpopup.min.js"></script>
+		<script>  
+			needPopup.config.custom = {
+				'removerPlace': 'outside',
+				'closeOnOutside': false,
+				onShow: function() {
+					console.log('needPopup is shown');
+				},
+				onHide: function() {
+					console.log('needPopup is hidden');
+				}
+			};
+			needPopup.init();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,790 @@
+@CHARSET "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*#header 위에 빈공간 사라지게하기*/
+body,ul{
+	font-family: 'Jeju Hallasan', serif;
+	margin:0px;
+	padding:0px;
+}
+
+
+#header {
+	background:#285943;
+	height:45px;
+	width:100%;
+}
+#header_inner {
+	float:right;
+	margin-right:70px;
+}
+
+/*ul점 없애기*/
+#header_ul {
+	list-style-type:none;
+}
+
+/*li 오른쪽 정렬 하얀색 글씨색*/
+.header_li {
+	float:left;
+	height:45px;
+	color:white;
+	width:100px;
+	text-align:center;
+	position:relative;	
+	line-height:45px; 	 
+	
+}
+
+#header_ul>a {
+	font-family: 'Jeju Hallasan', serif;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	padding: 0 5px;
+	font-size:13px;
+	line-height:45px; 	 
+}
+
+.header_dropdown {
+	left:0px;
+	display:none;
+	box-sizing:border-box;
+	position:absolute;
+	width:100px;
+}
+
+.header_li:HOVER {
+	background-color:#8CD790;
+	
+}
+
+.header_li:HOVER .header_dropdown {
+	font-family: 'Jeju Hallasan', serif;
+	display:block;
+	z-index:1;/* 우선순위 */
+}
+
+#login_user{
+	display:inline-block;
+	width:92px;
+	heigth:30px;
+	line-height:45px;
+	color:white;
+	float:left;
+	text-align:rigth;
+	font-family:'Jeju Hallasan', serif;
+	
+}
+
+.dropdown_a:HOVER {
+	background-color:yellow;
+	color:black;
+	text-decoration:underline;
+}
+
+
+
+.dropdown_a {
+	height:45px;
+	display:block;
+	text-decoration:none;
+	padding: 10px 0px;
+	font-size:13px;
+	color:white;
+	background-color : #cbe86b;
+}
+
+.dropdown_b {
+	height:45px;
+	display:block;
+	text-decoration:none;
+	padding: 5.5px 0px;
+	font-size:13px;
+	color:white;
+	font-family: 'Jeju Hallasan', serif;
+	line-height:43px;
+	background-color:#cbe86b;
+}
+
+.dropdown_b:HOVER {
+	background-color:yellow;
+	color:black;
+	text-decoration:inline;
+}
+
+
+
+
+#bookmark{
+	color:white;
+	font-size:11px;
+	font-weight:bold;
+	margin-left:70px;
+	line-height:45px; 
+}
+
+
+
+
+.logo_span* a {
+	color:black;
+	font-size:10px;
+}
+/* 로고 */
+ #logo>a {
+	text-decoration:none;
+	font-family: 'Jeju Hallasan', serif;
+} 
+
+#mainlogo {
+	width : 280px;
+	text-align:center;
+	padding : 20px 0;
+	margin: 0 auto;
+	text-decoration:none;
+	font-family: 'Jeju Hallasan', serif;
+	
+}
+
+#mainlogo>a {
+	text-decoration:none;
+	font-size: 40px;
+	font-family: 'Jeju Hallasan', serif;
+	
+}
+
+
+
+
+#nav {
+	background:#77AF9C;
+	height:45px;
+	width:100%;
+}
+
+#nav_ul {
+	list-style-type:none;
+}
+
+.nav_li {
+	float:left;
+	color:white;
+	width:100px;
+	text-align:center;
+	position:relative;	
+}
+.nav_li>a {
+	font-family: 'Jeju Hallasan', serif;
+	color:white;
+	text-decoration:none;
+	padding: 0 5px;
+	font-size:13px;
+	line-height:45px;
+	 
+}
+
+.nav_li:HOVER {
+	background-color:#cbe86b;
+}
+
+.nav_li:HOVER .nav_dropdown {
+	display:inline-block;
+	over-flow:hidden;
+	z-index:1;
+} 
+.nav_dropdown {
+	left:0px;
+	display:none;
+	box-sizing:border-box;
+	position:absolute;
+	width:100px;
+	cursur:pointer;
+	
+}
+
+#nav_inner {
+	float:center;
+	text-align: center;
+}
+
+fieldset {
+	border-color: #56A902;
+	padding:20px 40px 0px 40px;
+	margin: 50px auto;
+	width: 400px;
+}
+
+label{
+	font-family: 'Jeju Hallasan', serif;
+}
+
+fieldset>a{
+	font-family: 'Jeju Hallasan', serif;
+}
+fieldset>input{
+	font-family: 'Nanum Gothic', serif;
+	
+}
+/* input 박스 태두리 없애기 */
+fieldset>input{
+	border: none;
+
+}
+
+fieldset>input:HOVER{
+	background-color: #fc913a;
+}
+
+
+
+
+
+#butten1, #butten2{
+	 background:#cbe86b;
+	 color:#fff;
+	 border:none;
+	 position:relative;
+	 height:40px;
+	 font-size:1.6em;
+	 padding:0 10px;
+	 cursor:pointer;
+	 transition:800ms ease all;
+	 outline:none;
+	 font-family: 'Jeju Hallasan', serif;
+}
+
+#butten1:HOVER{
+	background:#fff;
+	color: #5CAB7D;
+	border: 2px solid #cbe86b;
+   	border-radius: 8px;
+}
+
+#butten2:HOVER{
+	background:#fff;
+	color: #5CAB7D;
+	border: 2px solid #cbe86b;
+   	border-radius: 8px;
+}
+
+#butten4 {
+	 background:#cbe86b;
+	 color:#fff;
+	 border:none;
+	 position:relative;
+	 height:20px;
+	 font-size:13px;
+	 padding:0 10px;
+	 cursor:pointer;
+	 transition:800ms ease all;
+	 outline:none;
+	 font-family: 'Jeju Hallasan', serif;
+}
+#idbtn{
+	 background:#cbe86b;
+	 color:#fff;
+	 border:none;
+	 position:relative;
+	 height:20px;
+	 font-size:13px;
+	 padding:0 10px;
+	 cursor:pointer;
+	 transition:800ms ease all;
+	 outline:none;
+	 font-family: 'Jeju Hallasan', serif;
+	
+}
+#idbtn:HOVER{
+	background:#fff;
+	color: #5CAB7D;
+	border: 1px solid #cbe86b;
+   	border-radius: 8px;
+	
+}
+#butten4:HOVER, #idbtn_buttten:HOVER{
+	background:#fff;
+	color: #5CAB7D;
+	border: 1px solid #cbe86b;
+   	border-radius: 8px;
+}
+
+
+
+#group_butten{
+	text-align: center;
+}
+
+#h2_header{
+	font-family: 'Jeju Hallasan', serif;
+	font-size: 40px;
+	text-align: center;
+}
+
+#log_msg{
+		width: 350px;
+		height: 100px;
+		border:2px solid #cbe86b;
+		margin: 0 auto;	/* content 가운데 정렬 */
+		margin-top:50px;	/* content 위에 공백 만들기 */
+		border-radius:5px;
+		text-align: center;
+		color: red;
+}
+#log_msg1{
+	padding: 25px 0 25px 0;
+	
+}
+
+#log_log{
+	font-family: 'Jeju Hallasan', serif;
+	width: 300px;
+	height:200px;
+	margin: 0 auto;
+	margin-top:30px;
+	margin-bottom:40px;
+}
+
+#log_butten{
+	text-align: center;
+
+	border: 3px solid #orange;
+}
+
+.ctn1{
+	padding:15px 60px;
+	color:white;
+	display:inline-block;
+	text-decoration:none;
+	background-color: #cddc39;
+	border-radius:10px;
+	text-align: center;
+	
+}
+.input_label{
+	background-color: white;
+	border:1px solid #dadada;
+	width: 300px;
+	height: 29px;
+	padding: 16px 8px 36px 11px;
+	margin-bottom: 20px;
+	
+}
+
+#log_butten1{
+	margin-top:34px;
+}
+.input_160cm {
+	border-width:0px;
+	padding: 10px 0px 10px 0px;
+	width:270px;
+	height: 25px;
+	margin:0 auto;	
+}
+.ctn1:HOVER {
+	text-decoration:none;
+	color:white;
+}
+
+#state{
+	margin-top:10px;
+	margin-bottom: 6px;
+	line-height:center; 
+	
+}
+#check_id{
+	float: left;
+}
+
+#state1_id, #state1_pw{
+	float: right;
+}
+
+#log_log>ul>p{
+	align:center;
+}
+
+
+#img05, #img01{
+	opacity: 1.0;
+	filter:alpha(opacity=100);
+}
+
+#img05:HOVER{
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+#img01:HOVER{
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+
+.pdt_item{
+	position:relative;
+	display:flex;
+	
+}
+
+.pdt_item .wrap_info{
+	position:absolute;
+	top:150px;
+	text-align:center;
+	color: black;
+	display:none;
+}
+
+
+
+.pdt_item .wrap_info2{
+	position:absolute;
+	top:150px;
+	left:10px;
+	color: black;
+	display:none;
+	
+}
+
+.pdt_item:HOVER #text1{
+	display:block;
+}
+
+.pdt_item:HOVER #text2{
+	display:block;
+}
+
+/* cm160_contract */
+	body, h1, ul, p, h3{
+		margin:0px;
+		padding:0px;
+	}
+	
+
+	
+	#langselect{
+		font-size: 12px;
+		font-weight: 400;
+		height: 30px;
+		padding: 6px 8px 5px 7px;
+		min-width: 98px;
+		color:#333;
+		border:1px solid #ccc;
+		line-height: 17px;
+	}
+	
+	
+
+/* content */	
+	#contract_container{
+		width: 768px;
+		margin: 0 auto;
+		box-sizing:borer-box;
+		position: relative;
+		/* border: 1px solid blue; */ 
+	}
+	
+	#join_content{
+		width:460px!important;
+		margin:0 auto!important;
+		/* border:1px solid green; */
+	}
+	
+	.lang > select{
+		background:url('../img/sel_arr.gif') 100% 50% no-repeat;
+		width:98px;
+		height: 30px;
+		background-color: white;
+		-webkit-appearance:none;
+	}
+	
+	.terms{
+		margin-bottom: 20px;
+		background-color: white;
+		border:1px solid #dadada;	
+		margin-top:50px;
+	}
+	.terms_p{
+		display:block;
+		padding:15px;
+		margin:0px;
+		position: relative;
+	}
+	
+	
+	.terms_span{
+		position: relative;
+		display:block;
+		height: 58px;
+	}
+	/* //버튼 숨기기 */
+	.terms_span > input{
+		position: absolute;
+		right: 1px;
+		top:50%;
+		width: 22px;
+		height: 22px;
+		margin-top: -11px;
+		visibility: hidden;
+	}
+	
+	.terms_span>label{
+		background: url('../img/check_off.gif') 100% 50% no-repeat;
+		display:block;
+		line-height: 20px;
+		height: 58px;
+		top:-1px;
+		font-size:14px;
+		font-weight: 700;	
+	}
+	/* 버튼을 클릭했을때(true) */
+	.terms_span>input:checked +label{
+		background-image: url('../img/check_on.gif');
+	}
+
+	#terms_ul{
+		list-style: none;
+		padding-bottom:7px;
+	}
+	
+	#terms_ul_li1{
+		border-top:1px solid #f0f0f0;
+	}
+	#terms_ul>li{
+		display:block;
+		padding:13px 15px 7px;
+	}
+	.ul_li_span{
+		position: relative;
+		display: block;
+		height: 24px;
+	}
+	
+	.label1{
+		height: 24px;
+		font-size:14px;
+		font-weight: 700;
+		line-height: 24px;
+		position:absolute;
+		color:#333;
+		top:0px;
+		left:0px;
+		width: 100%;
+	}
+	.span_only{
+		color:#0d9900;
+		font-size:12px;
+		font-weight: 400;
+	}
+	
+	.ul_li_span > input{
+		visibility: hidden;
+		position: absolute;
+		right: 1px;
+		width: 22px;
+		height: 22px;
+		top:50%;
+		margin-top:-11px;
+	}
+	
+	.ul_li_span > label{
+		background: url('../img/check_off.gif')100% 50% no-repeat;
+		display:block;
+	}
+	.ul_li_span > input:checked +label{
+		background-image: url('../img/check_on.gif');
+	}
+	
+	.terms_box{
+		position: relative;
+		box-sizing:border-box;
+		height: 88px;
+		margin-top:11px;
+		padding:8px 10px;
+		border:1px solid #f0f0f0;
+		background-color: #f7f7f7;
+		overflow: auto; 
+	}
+	
+	.article{
+		margin-top:0px;
+	}
+	
+	.article_title{
+		font-family: 'Jeju Hallasan', serif;
+		font-size:12px;
+		font-weight: 700;
+		line-height: 15px;
+		color:#666;
+		
+
+	}
+	
+	.article>p{
+		display: block;
+		font-size:12px;
+		line-height: 16px;
+		color:#666; 
+	}	
+	
+	.span_select{
+		color:#969696;
+		font-size:12px;
+		font-weight: 400;
+	}
+	
+	.btn_double_area{
+		margin: 30px -5px 0px;
+		overflow: hidden;
+	}
+	.btn_double_area>span{
+		display: block;
+		float:left;
+		width:50%;
+	}
+	.btn_type{
+		width: auto;
+		margin:0px 5px;
+		font-size:20px;
+		font-weight: 600;
+		line-height: 61px;
+		display:block;
+		box-sizing:border-box;
+		height: 61px;
+		padding-top:1px;
+		text-align: center;
+	}
+	
+	a{
+		text-decoration: none;
+		color:inherit;
+	}
+	/* 비동의 */
+	.btn_default{
+		color:#333;
+		background-color: #fff;
+		border:1px solid #e7e7e7;
+	}
+	.btn_default:HOVER{
+		color:#fff;
+		text-decoration:none;
+		background-color: #333;
+		
+	}
+	/* 동의버튼 */
+	.btn_agree{
+		color:#fff;
+		border:1px solid #cddc39;
+		background-color: #cddc39;
+	}
+	.btn_agree:HOVER{
+		text-decoration: none;
+		color:#cddc39;
+		background-color:white;
+	}
+	
+	.group_join{
+		margin: 20px 0px 65px;
+		text-align: center;
+		color:#666;
+		font-size:12px;
+	}
+	
+	.group_join>a{
+		text-decoration: underline;
+		color:#333;
+	}
+	
+		#footer{
+		padding: 15px 0;
+	}
+	/* footer 하위 모든 것에 이속성을 부여 */
+	#footer * {
+		font-size: 11px;
+		line-height: normal;
+		list-style: none;
+		color:#333;
+	}
+	
+	#footer> ul{
+		margin: 0 auto 9px;
+		text-align: center;
+	}
+	
+	/* 가로로 정렬 */
+	#footer> ul> li {
+		display:inline;
+		padding: 0 5px 0 7px;
+		border-left: 1px solid #dadada; /* 글자 사이에 | 넣기 */
+	}
+	
+	#footer > ul > li:first-child{
+		border-left: 0px!important;
+	}
+	/* 글시를 호버 했을때 밑줄과 함께 녹색으로 */
+	#footer > ul > li a:HOVER{
+		color:#1fbc02;
+		text-decoration: underline;
+	}
+	
+	#addr_logo{
+		width:63px;
+		height:11px;
+	}
+	
+	#address{
+		margin: 0px auto;
+		text-align: center;
+	}
+	/* address 하위에 있는 모든 글씨들 사이즈와 폰트 변경 */
+	#address *{
+		font: 9px verdana;
+	}
+	
+	#address a{
+		font-weight: bold;
+	}
+	
+	#address a:HOVER {
+		color:#1fbc02;
+		text-decoration: underline;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

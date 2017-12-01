@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	
+	@import url(http://fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+	
+	/*#header 위에 빈공간 사라지게하기*/
+	body,ul{
+		margin:0px;
+		padding:0px;
+	}
+
+	#header {
+		background:red;
+		height:30px;
+		width:100%;
+	}
+	#header_inner {
+		float:right;
+		margin-right:70px;
+	}
+	
+	/*ul점 없애기*/
+	#header_ul {
+		list-style-type:none;
+	}
+	
+	/*li 오른쪽 정렬 하얀색 글씨색*/
+	.header_li {
+		float:left;
+		color:white;
+		width:100px;
+		text-align:center;
+		position:relative;	
+	}
+	
+	.header_li:HOVER {
+		background-color:#EC7357;
+	}
+	
+	.header_li:HOVER .header_dropdown {
+		font-family: 'Jeju Hallasan', serif;
+		display:block;
+	}
+	
+	.dropdown_a {
+		display:block;
+		text-decoration:none;
+		padding: 10px 0px;
+		font-size:13px;
+		color:white;
+		background-color : #EC7357;
+	}
+	
+	.dropdown_a:HOVER {
+		background-color:#FDD692;
+		color:black;
+		text-decoration:underline;
+	}
+	
+	.header_dropdown {
+		left:0px;
+		display:none;
+		box-sizing:border-box;
+		position:absolute;
+		width:100px;
+	}
+	
+	
+
+	
+	.header_li>a {
+		font-family: 'Jeju Hallasan', serif;
+		color:white;
+		text-decoration:none;
+		padding: 0 5px;
+		font-size:13px;
+		line-height:30px;
+		 
+	}
+	
+	#bookmark{
+		color:white;
+		font-size:11px;
+		line-height:30px;
+		font-weight:bold;
+		margin-left:70px;
+	}
+	
+	.logo_span {
+		color:black;
+		font-size:50px;
+	}
+	/* 로고 */
+	#logo>a {
+		text-decoration:none;
+		font-family: 'Jeju Hallasan', serif;
+	}
+	
+	#mainlogo {
+		width : 280px;
+		text-align:center;
+		padding : 20px 0;
+		margin: 0 auto;
+		
+	}
+	
+	#nav {
+		background:red;
+		height:30px;
+		width:100%;
+	}
+	
+	#nav_ul {
+		list-style-type:none;
+	}
+	
+	.nav_li {
+		float:left;
+		color:white;
+		width:100px;
+		text-align:center;
+		position:relative;	
+	}
+	.nav_li>a {
+		font-family: 'Jeju Hallasan', serif;
+		color:white;
+		text-decoration:none;
+		padding: 0 5px;
+		font-size:13px;
+		line-height:30px;
+		 
+	}
+	.nav_dropdown {
+		left:0px;
+		display:none;
+		box-sizing:border-box;
+		position:absolute;
+		width:100px;
+	}
+	.dropdown_b {
+		display:block;
+		text-decoration:none;
+		padding: 10px 0px;
+		font-size:13px;
+		color:white;
+		font-family: 'Jeju Hallasan', serif;
+		background-color:#EC7357;
+	}
+	
+	.dropdown_b:HOVER {
+		background-color:#FDD692;
+		color:black;
+		text-decoration:underline;
+	}
+	
+	.nav_li:HOVER {
+		background-color:#EC7357;
+	}
+	
+	.nav_li:HOVER .nav_dropdown {
+		display:block;
+	}
+	#nav_inner {
+		float:right;
+		margin-right:70px;
+	}
+	
+</style>
+
+
+</head>
+<body>
+		<div id = "header">
+			<span id="bookmark"> BOOKMARK +</span>
+		
+			<!-- 로그인 회원가입 등등 담겨있는 div -->
+			<div2 id="header_inner">
+				<ul id="header_ul">
+					<li class="header_li"><a href = "#"> 로그인</a></li>
+					<li class="header_li"><a href = "#"> 회원가입</a></li>
+					<li class="header_li"><a href = "#"> 마이페이지▼</a>
+						<div class = "header_dropdown">
+							<a href = "#" class="dropdown_a">주문배송</a>
+							<a href = "#" class="dropdown_a">장바구니</a>
+							<a href = "#" class="dropdown_a">위시리스트</a>
+							<a href = "#" class="dropdown_a">쿠폰조회</a>
+						</div></li>
+					<li class="header_li"><a href = "#"> 고객행복센터</a></li>
+				</ul>
+			</div2>
+		</div>
+		
+		<!-- 로고 -->
+		<div id = "logo">
+			<a href = "#">
+				<div id = "mainlogo">
+					<span class = "logo_span">기지게 펴도 160CM</span>
+				</div>
+			</a>
+		</div>
+		
+		<div id="nav">
+			<div2 id="nav_inner">
+				<ul id="nav_ul">
+					<li class="nav_li"><a href ="#">베스트 100</a></li>
+					<li class="nav_li"><a href ="#">작은 사이즈</a></li>
+					<li class="nav_li"><a href ="#">아우터</a>
+						<div class= "nav_dropdown">
+							<a href="#" class="dropdown_b">자켓</a>
+							<a href="#" class="dropdown_b">가디건</a>
+							<a href="#" class="dropdown_b">집업</a>
+							<a href="#" class="dropdown_b">코트</a>
+							<a href="#" class="dropdown_b">점퍼/블루종</a>
+						</div></li>
+					<li class="nav_li"><a href ="#">티셔츠</a>
+						<div class= "nav_dropdown">
+							<a href="#" class="dropdown_b">긴팔티</a>
+							<a href="#" class="dropdown_b">맨투맨</a>
+							<a href="#" class="dropdown_b">후드티</a>
+							<a href="#" class="dropdown_b">소프트</a>
+						</div></li>
+					<li class="nav_li"><a href ="#">셔츠</a>
+						<div class= "nav_dropdown">
+							<a href="#" class="dropdown_b">긴팔남방</a>
+							<a href="#" class="dropdown_b">반팔/7부</a>
+							<a href="#" class="dropdown_b">무지남방</a>
+						</div></li>
+					<li class="nav_li"><a href ="#">바지</a>
+						<div class= "nav_dropdown">
+							<a href="#" class="dropdown_b">인생바지</a>
+							<a href="#" class="dropdown_b">슬랙스</a>
+							<a href="#" class="dropdown_b">반바지</a>
+							<a href="#" class="dropdown_b">청바지</a>
+							<a href="#" class="dropdown_b">면바지</a>
+							<a href="#" class="dropdown_b">7부/9부</a>
+						</div></li>
+					<li class="nav_li"><a href ="#">신발</a>
+						<div class= "nav_dropdown">
+							<a href="#" class="dropdown_b">스니커즈</a>
+							<a href="#" class="dropdown_b">슬립온</a>
+							<a href="#" class="dropdown_b">로퍼/보트화</a>
+							<a href="#" class="dropdown_b">구두</a>
+							<a href="#" class="dropdown_b">워커</a>
+							<a href="#" class="dropdown_b">샌들</a>
+							<a href="#" class="dropdown_b">수제화</a>
+						</div></li>
+					<li class="nav_li"><a href ="#">가방</a>
+						<div class= "nav_dropdown">
+							<a href="#" class="dropdown_b">크로스백</a>
+							<a href="#" class="dropdown_b">백팩</a>
+							<a href="#" class="dropdown_b">숄더/토드백</a>
+							<a href="#" class="dropdown_b">클러치</a>
+							<a href="#" class="dropdown_b">에코백</a>
+						</div></li>
+					<li class="nav_li"><a href ="#">악세서리</a>
+						<div class= "nav_dropdown">
+							<a href="#" class="dropdown_b">모자</a>
+							<a href="#" class="dropdown_b">벨트</a>
+							<a href="#" class="dropdown_b">헤어</a>
+							<a href="#" class="dropdown_b">패션소품</a>
+							<a href="#" class="dropdown_b">시계</a>
+							<a href="#" class="dropdown_b">반지/팔찌</a>
+						</div></li>
+				</ul>
+			</div2>
+		</div>
+
+</body>
+
+</html>
